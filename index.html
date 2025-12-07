@@ -1,65 +1,81 @@
-<!doctype html>
-<html lang=”en”>
-<head>
-        <meta charset=”UTF-8”>
-        <meta http-equiv=”X-UA-compatible” content=”IE=edge”>
-        <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-        <title>Elige tu dificultad, elige tu salud</title>
-        <c-accordion>
-  <c-accordion-item #item0="cAccordionItem" [visible]="false">
-    <ng-template cTemplateId="accordionHeaderTemplate">
-      <button (click)="item0.toggleItem()" [collapsed]="!item0.visible" cAccordionButton>
-        Accordion item #0
-      </button>
-    </ng-template>
-    <ng-template cTemplateId="accordionBodyTemplate">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </ng-template>
-  </c-accordion-item>
-  <c-accordion-item #item1="cAccordionItem" [visible]="true">
-    <ng-template cTemplateId="accordionHeaderTemplate">
-      <button (click)="item1.toggleItem()" [collapsed]="!item1.visible" cAccordionButton>
-        Accordion item #1
-      </button>
-    </ng-template>
-    <ng-template cTemplateId="accordionBodyTemplate">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </ng-template>
-  </c-accordion-item>
-  <c-accordion-item #item2="cAccordionItem" [visible]="false">
-    <ng-template cTemplateId="accordionHeaderTemplate">
-      <button (click)="item2.toggleItem()" [collapsed]="!item2.visible" cAccordionButton>
-        Accordion item #2
-      </button>
-    </ng-template>
-    <ng-template cTemplateId="accordionBodyTemplate">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </ng-template>
-  </c-accordion-item>
-</c-accordion>
-</script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/icon.ico"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Shadcn/Vue - Landing template</title>
+
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Shadcn/Vue - Landing template"
+    />
+    <meta
+      name="description"
+      content="Free Shadcn landing page for Vue developers"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:url"
+      content="https://github.com/leoMirandaa/shadcn-landing-page.git"
+    />
+    <meta
+      property="og:title"
+      content="Shadcn/Vue - Landing template"
+    />
+    <meta
+      property="og:description"
+      content="Free Shadcn landing page for Vue developers"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue-landing.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:url"
+      content="https://github.com/leoMirandaa/shadcn-landing-page.git"
+    />
+    <meta
+      name="twitter:title"
+      content="Shadcn/Vue - Landing template"
+    />
+    <meta
+      name="twitter:description"
+      content="Free Shadcn landing page for Vue developers"
+    />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue-landing.jpg"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script
+      type="module"
+      src="/src/main.ts"
+    ></script>
+  </body>
 </html>
+
 
 
